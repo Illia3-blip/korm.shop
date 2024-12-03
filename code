@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>korm.com - Pet Food and Accessories</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: DodgerBlue;
+            color: #fff;
+            text-align: center;
+            padding: 1.5em 0;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p.tagline {
+            font-size: 1.1em;
+            margin-top: 5px;
+        }
+
+        header p.description {
+            font-size: 1em;
+            margin-top: 10px;
+            color: #f0f8ff;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            font-size: 1.1em;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #333;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            transform: translateY(-2px);
+        }
+
+        nav a:active {
+            background-color: #444;
+            transform: translateY(2px);
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .promotion {
+            background-color: #f8f8f8;
+            text-align: center;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .promotion img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .promotion h1 {
+            background-color: DodgerBlue;
+            color: #fff;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 1.5em;
+            border-radius: 5px;
+        }
+
+        .promotion h2 {
+            background-color: LightGray;
+            color: #333;
+            padding: 10px;
+            font-size: 1.2em;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .product-list {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .product {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            padding: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+            max-height: 180px;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .product h2 {
+            color: DodgerBlue;
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+
+        .product p.price {
+            background-color: Tomato;
+            color: white;
+            padding: 5px;
+            font-weight: bold;
+            border-radius: 5px;
+            display: inline-block;
+        }
+
+        .product p.description {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        .buy-button {
+            background-color: Green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .buy-button:hover {
+            background-color: DarkGreen;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>korm.com - Pet Food and Accessories</h1>
+        <p class="tagline">We find better pet food and accessories in the world!</p>
+        <p class="description">Welcome to korm.com, your one-stop online destination for premium-quality pet food and accessories. We specialize in providing a wide variety of nutritious options and essential pet care products.</p>
+    </header>
+	
+    <section class="product-list">
+        <div class="product">
+            <img src="Dog Food.jpg" alt="Dog Food">
+            <h2>Dog Food</h2>
+            <p class="price">$20</p>
+            <p class="description">Dry complete nutritional food for puppies of small breeds with sensitive skin. With salmon. 3000g</p>
+            <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+        </div>
+		<div class="product">
+            <img src="Korm sobak.jpg" alt="Dog Wet Food">
+            <h2>Dog Wet Food</h2>
+            <p class="price">$70</p>
+            <p class="description">Dry complete nutritional food for puppies of small breeds with sensitive skin. With salmon. Box-15kg</p>
+            <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+        </div>
+        <div class="product">
+            <img src="full_pro-plan-adult-vital-func-cat-zoolove.jpg" alt="Cat Food">
+            <h2>Cat Food</h2>
+            <p class="price">$15</p>
+            <p class="description">Dry complete nutritional food for adult sterilized cats over 7 years of age, with turkey. 5000g</p>
+            <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+        </div>
+		<div class="product">
+            <img src="Korm kotov.jpg" alt="Cat Wet Food">
+            <h2>Cat Wet Food</h2>
+            <p class="price">$70</p>
+            <p class="description">Dry complete nutritional food for adult sterilized cats over 7 years of age, with turkey. Box-15kg</p>
+            <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+        </div>
+        <div class="product">
+            <img src="karmeo.jpg" alt="Bird Food">
+            <h2>Bird Food</h2>
+            <p class="price">$10</p>
+            <p class="description">Premium food vitapol karmeo for parrots, 1000g</p>
+            <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+        </div>
+		<div class="product">
+                <img src="0144_00_02-1200x1200.jpg" alt="Dog Collar">
+                <h2>Dog Collar</h2>
+                <p class="price">$12</p>
+                <p class="description">Durable and adjustable dog collar, suitable for all sizes.</p>
+                <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+            </div>
+            <div class="product">
+                <img src="a39e7d14f3a6b20a791f05b4b94074d9.jpg" alt="Cat Toy">
+                <h2>Cat Toy</h2>
+                <p class="price">$8</p>
+                <p class="description">Interactive toy for cats to help with exercise and play.</p>
+                <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+            </div>
+            <div class="product">
+                <img src="images.jpg" alt="Bird Feeder">
+                <h2>Bird Feeder</h2>
+                <p class="price">$25</p>
+                <p class="description">High-quality feeder for all types of birds, easy to refill and clean.</p>
+                <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+            </div>
+            <div class="product">
+                <img src="4243-938-lg.jpg" alt="Dog Feeder">
+                <h2>Dog Feeder</h2>
+                <p class="price">$18</p>
+                <p class="description">Automatic dog feeder with adjustable portion sizes.</p>
+                <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+            </div>
+            <div class="product">
+                <img src="kotov.jpg" alt="Cat Feeder">
+                <h2>Cat Feeder</h2>
+                <p class="price">$18</p>
+                <p class="description">Automatic cat feeder with scheduled feeding times.</p>
+                <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+            </div>
+            <div class="product">
+                <img src="4210845804_w640_h640_oshejnik-dlya-kotov.jpg" alt="Cat Collar">
+                <h2>Cat Collar</h2>
+                <p class="price">$10</p>
+                <p class="description">A beautiful collar for your beautiful cats.</p>
+                <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+            </div>
+            <div class="product">
+                <img src="0000115301.jpg" alt="Dog Toy">
+                <h2>Dog Toy</h2>
+                <p class="price">$8</p>
+                <p class="description">Great and fun toy for your dogs.</p>
+                <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+              </div>
+			   <div class="product">
+                <img src="Home.jpg" alt="Cat Home">
+                <h2>Cat Home</h2>
+                <p class="price">$12</p>
+                <p class="description">A soft, cozy and warm house for the winter for your good cats.</p>
+                <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+              </div>
+			   <div class="product">
+                <img src="Dog home.jpg" alt="Dog Home">
+                <h2>Dog Home</h2>
+                <p class="price">$12</p>
+                <p class="description">A soft, cozy and warm house for the winter for your good dog</p>
+                <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+              </div>
+			  <div class="product">
+                <img src="Cage.jpg" alt="Parrot Cage">
+                <h2>Parrot Cage</h2>
+                <p class="price">$12</p>
+                <p class="description">spacious and comfortable cage with sawdust for parrots.</p>
+                <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+              </div>
+			  <div class="product">
+                <img src="42417-1000x1000.jpg" alt="cat scratching post">
+                <h2>Сat scratching post</h2>
+                <p class="price">$10</p>
+                <p class="description">a scratching post that will prevent your cats from scratching your furniture.</p>
+                <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+              </div>
+			  <div class="product">
+                <img src="pho_pro_det_clip_34702_1_sall_awk_v1_1_202-1200x800.jpg" alt="cat scratching post">
+                <h2>Dog teeth rope</h2>
+                <p class="price">$10</p>
+                <p class="description">Very strong rope for your dogs teeth.</p>
+                <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+              </div>
+			  <div class="product">
+                <img src="photo_2024-11-07_13-33-11.jpg" alt="Cat Food and Cat Toy">
+                <h2>Cat Food and Cat Toy</h2>
+                <p class="price">$10</p>
+                <p class="description">The promotion is valid from 07.11.24 to 14.11.24</p>
+                <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+              </div>
+			  <div class="product">
+                <img src="photo_2024-11-07_13-22-20.jpg" alt="Dog Coller and Dog Toy">
+                <h2>Dog Coller and Dog Toy</h2>
+                <p class="price">$10</p>
+                <p class="description">The promotion is valid from 07.11.24 to 14.11.24</p>
+                <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+              </div>
+			   <div class="product">
+                <img src="photo_2024-11-07_13-28-47.jpg" alt="Bird Feeder and Bird Food">
+                <h2>Bird Feeder and Bird Food</h2>
+                <p class="price">$10</p>
+                <p class="description">The promotion is valid from 07.11.24 to 14.11.24</p>
+                <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+              </div>
+			   <div class="product">
+                <img src="Nabor kotov.jpg" alt="Сat Grooming Kit">
+                <h2>Сat Grooming Kit</h2>
+                <p class="price">$15</p>
+                <p class="description">This cat grooming kit will help you deal with dirt easily.</p>
+                <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+              </div>
+			  <div class="product">
+                <img src="Nabor sobak.jpg" alt="Dog Grooming Kit">
+                <h2>Dog Grooming Kit</h2>
+                <p class="price">$15</p>
+                <p class="description">This dog grooming kit will help you deal with dirt easily.</p>
+                <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+              </div>
+			  <div class="product">
+                <img src="Nabor popugaev.jpg" alt="Parrot Grooming Kit">
+                <h2>Parrot Grooming Kit</h2>
+                <p class="price">$15</p>
+                <p class="description">This parrot grooming kit will help you deal with dirt easily.</p>
+                <a href="https://www.paypal.com/ru/webapps/mpp/pay-online" class="buy-button" target="_blank">Buy Now</a>
+              </div>
+    </section>
+	 <nav>
+	 <a href="file:///C:/Users/User/Documents/презинтация/Korm1.html" class="#home" target="_blank">Home</a>
+	 <a href="file:///C:/Users/User/Documents/презинтация/About.html" class="#about" target="_blank">About Us</a>
+        </nav>
+
+    <footer>
+        <p>&copy; 2024 korm.com. All rights reserved.</p>
+        <h1>Contact us: Telegram: @illia_125; @gleb_prostochelovek</h1>
+        <h1>Viber: +380686125210; +380686123221</h1>
+		<p>To learn more about our product range and mission, click on the "About Us" button.</p>
+    </footer>
+</body>
